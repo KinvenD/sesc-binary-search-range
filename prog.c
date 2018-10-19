@@ -32,6 +32,12 @@ int bi_s_p(int l, int p, struct node *head){
   if(l == p){
     return l;
   }
+  if(get(head,l)->value == K){
+    return l;
+  }
+  if(get(head,p)->value == K){
+    return p;
+  }
   if(get(head, (l+p)/2)->value >= K){
     return bi_s_p(l, (l+p)/2,head);
   }else{
