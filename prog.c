@@ -78,7 +78,7 @@ int main() {
     //printf("%d \n", min);
   }
   min++;
-  while(get(header,max)->value == K && max<N+1){
+  while(get(header,max)->value == K && max<N){
     max++;
   }
   max--;
