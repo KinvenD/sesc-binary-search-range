@@ -76,5 +76,9 @@ int main() {
     max++;
   }
   max--;
+  if(get(header,k)->value!=K){
+      printf("-1 -1");
+  }else{
   printf("%d %d", min, max);
+  }
 }
